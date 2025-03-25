@@ -151,6 +151,9 @@ a {
   .icon--primary {
     fill: var(--color-primary);
   }
+  .icon--secondary{
+    fill:var(--color-secondary)
+  }
   .icon--white{
     fill:#fff;
   }
@@ -475,4 +478,16 @@ font-size: 3rem;
     justify-self: left;
     margin: 0 2rem;
   }
+}
+.collapsible--header{
+  display: flex;
+  justify-content: space-between;
+}
+.collapsible--heading{
+  margin-top: 0;
+  font-size: 3rem;
+}
+
+.collapsible--chevron{
+  transform: rotate(-90deg);
 }
