@@ -478,6 +478,7 @@ font-size: 3rem;
     justify-self: left;
     margin: 0 2rem;
   }
+  /*collapsibe*/
 }
 .collapsible--header{
   display: flex;
@@ -488,6 +489,20 @@ font-size: 3rem;
   font-size: 3rem;
 }
 
-.collapsible--chevron{
+.collapsible--chevronn{
   transform: rotate(-90deg);
+  
+}
+.collapsible__content{
+max-height:0;
+overflow: hidden;
+
+transition: all 0.3s;
+}
+.collapsible--expanded .collapsible--chevronn{
+transform:rotate(0) ;
+}
+.collapsible--expanded .collapsible__content{
+  max-height: 100vh;
+  
 }
